@@ -1,0 +1,117 @@
+:root {
+    --blanco: #FEFFFF;
+    --primario: #3AAFA9;
+    --secundario: #2B7A78;
+    --gris: #DEF2F1;
+    --oscuro: #17252A;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Krub', sans-serif;
+    min-height: 100%;
+}
+header div{
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    height: 400px;
+    background-image: url(../img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    margin:0 auto;
+    background-color: var(--primario);
+    
+}
+h1 a{
+    font-size: 4rem;
+    color: var(--gris);
+    text-align: center;
+    text-decoration: none;
+}
+h1,h2,h3{
+   text-align: center;
+   margin: 1%;
+}
+h2 {
+   color:var(--primario);
+   font-weight: 800;
+   font-size: 3rem;
+}
+h3 {
+    font-size: 1.9rem;
+    color: var(--gris);
+}
+.intro{
+    color: var(--secundario);
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+p{
+    text-align: center;
+    font-size: 1.7rem;
+    margin:0 12%;
+}
+main{
+    margin-top: 7%;
+    height: 500px;
+}
+
+
+/*BOTONES*/
+button {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primario);
+    border-color: var(--primario);
+    color: var(--gris);
+    box-shadow: 0 0 40px 40px var(--primario) inset, 0 0 0 0 var(--primario);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out; 
+}
+  button:hover{
+    color:var(--oscuro);
+  }
+  
+
+/*FOOTER*/
+footer {
+    font-size: 1.3em;
+    height: 60px;
+    display: block;
+    padding-top: 1%;
+    text-align: center;
+    background-color:var(--secundario) ;
+}
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    box-sizing: content-box;
+}
+span{
+    font-weight: 600;
+}
+/*FOOTER*/
+footer {
+    clear:  both;
+    display: block;
+    text-align: center;
+}

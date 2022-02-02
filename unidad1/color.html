@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primera evaluacónn</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+    <header class="header">
+    <div>
+        <h1><a href="../index.html">Diseño de Interfaces Web</a></h1>
+    </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="unidad1.html">Unidad 1</a>
+                <ul>
+                    <li><a href="color.html">Color</a></li>
+                    <li><a href="tipografia.html">Tipografía</a></li>
+                    <li> <a href="estructura.html">Estructura</a></li>
+                    <li> <a href="maquetacion.html">Maquetación</a></li>
+                    <li> <a href="prototipo.html">Prototipo</a></li>
+                    <li> <a href="navegacion.html">Navegacion</a></li>
+                    <li> <a href="uestilo.html">Estilo</a></li>
+                </ul>
+            </li>
+            <li><a href="../unidad2.html">Unidad 2</a></li>
+            <li> <a href="../unidad3.html">Unidad 3</a></li>
+            <li><a href="../unidad4.html">Unidad 4</a></li>
+            <li><a href="../unidad5.html">Unidad 5</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor sombra">
+        <h2>Color</h2>
+        <main class="contenido">
+            <div name="Modelo RGB">
+                <h3>Modelo RGB</h3>
+                <br>
+                <p>El modelo de color RGB (del inglés Red, Green, Blue) indica la composición de color en función de la
+                    intensidad de los colores primarios que lo componen. Gracias a este modelo se representan los
+                    colores
+                    mediante la síntesis aditiva, la suma de sus colores.
+                    Para determinar la proporción en la que se encuentran los colores primarios en un determinado color,
+                    se
+                    asigna a cada primario un valor entre el 0 y el 255. Este rango viene dado por su codificación, en
+                    la
+                    que se emplea 1 byte (8 bits).</p>
+                <img src="../img/unidad1/imagen1.png">
+                <p>Si representamos gráficamente el modelo RGB obtendremos un cubo definido por sus ejes X, Y, Z. Cada
+                    uno
+                    de estos ejes se corresponde con cada uno de los colores primarios, de esta forma el eje X se
+                    corresponde con el rojo primario, el eje Y con el verde primario y el eje Z con el azul primario. De
+                    esta forma, podemos observar como a mayor numero más intensidad del propio color. La ausencia de
+                    color,
+                    es decir el color negro, se obtiene cuando las tres ejes son 0: (0, 0, 0), mientras que el color
+                    blanco
+                    se forma con los tres ejes en su máximo valor: (255, 255, 255). Por ejemplo:</p>
+                <table>
+                    <tr>
+                        <th>Rojo</th>
+                        <th>→</th>
+                        <th>(255, 0, 0)</th>
+                    </tr>
+                    <tr>
+                        <th>Verde</th>
+                        <th>→</th>
+                        <th>(0, 255, 0)</th>
+                    </tr>
+                    <tr>
+                        <th>Azul</th>
+                        <th>→</th>
+                        <th>(0, 0, 255)</th>
+                    </tr>
+                </table>
+                <p>La codificación dodecadecimal del color permite expresar fácilmente un color concreto de la escala
+                    RGB, utilizando la notación hexadecimal, como en HTML. Este sistema utiliza la combinación de tres
+                    códigos de dos dígitos para expresar las diferentes intensidades de los colores primarios RGB .
+                </p>
+                <table>
+                    <tr>
+                        <th>Rojo</th>
+                        <th>→</th>
+                        <th>#ff0000</th>
+                    </tr>
+                    <tr>
+                        <th>Verde</th>
+                        <th>→</th>
+                        <th>#ff0000</th>
+                    </tr>
+                    <tr>
+                        <th>Azul</th>
+                        <th>→</th>
+                        <th>#0000ff</th>
+                    </tr>
+                </table>
+            </div>
+            <div name="Modelo HSL">
+                <h3>Modelo HSL</h3>
+                <br>
+                <p>El modelo HSL (Hue, Saturation, Lightness) define un modelo de color según los componentes de sus
+                    constituyentes. Se representa gráficamente como un cono doble o un doble hexágono. </p>
+                <ul>
+                    <li>Los dos vértices en el modelo HSL se corresponden con el blanco y el negro.</li>
+                    <li>El ángulo se corresponde con el matiz</li>
+                    <li>La distancia al eje con la saturación</li>
+                    <li>La distancia al eje blanco-negro se corresponde a la luminancia. </li>
+                </ul>
+                <img src="../img/unidad1/imagen2.png">
+                <p>El modelo HSL divide sus canales en:</p>
+                <ul>
+                    <li><b>Canal H (Hue)</b>: Se traduce como tonalidad (HUE). Este representa a los colores primarios
+                        junto
+                        con todos sus matices intermedios (naranjas amarillos, morados…). Dentro del círculo cromático
+                        se establece el rojo primario en 0º (y en 360 ya que se trata de una circunferencia), el verde
+                        primario en 120º y el azul primario a 240º.</li>
+                    <li><b>Canal S (Saturation)</b>: Se trata del canal de saturación lo que representa la cantidad de
+                        color.
+                        De tal manera que si cualquier color pierde saturación tiende hacia el gris. Si la gana, se
+                        aleja del gris y gana “color”. El valor mínimo de saturación para cualquier color es el gris,
+                        mientras que el máximo es el más intenso. Sus coordenadas cilíndricas se representan mediante en
+                        el radio del cilindro.</li>
+                    <li><b>Canal L (Lightness)</b>: Se trata del canal de luminosidad, se entiende como la cantidad de
+                        luz que
+                        presenta el color. El rango de valores de este canal se suele referir como un porcentaje. En una
+                        luminosidad máxima del 100% se obtiene el color blanco, mientras que a una luminosidad mínima
+                        del 0% se obtiene el negro. En su representación cilíndrica este valor se representa su
+                        coordenada según la altura.</li>
+                </ul>
+            </div>
+            <div name="Modelo HSV">
+                <h3>Modelo HSV</h3>
+                <br>
+                <p>El modelo de color HSV es una transformación no lineal del modelo RGB en coordenadas cilíndricas de
+                    manera que cada color viene definido por las siguientes dimensiones: HSL (Hue, Saturation, Value).
+                    Los primeros parámetros, tonalidad y saturación, se corresponden con los valores explicados
+                    anteriormente en el modelo HSL. La definición del canal V es:</p>
+                <p><b>Canal V (Value)</b>: Representa la altura en el eje blanco-negro. Los valores posibles van del 0
+                    al
+                    100%. 0 siempre es negro. Dependiendo de la saturación, 100 podría ser blanco o un color más o menos
+                    saturado</p>
+            </div>
+        </main>
+    </div>
+    <div class="continuar">
+        <a id="atras" class="slide" href="unidad1.html">Inicio</a>
+        <a id="siguiente" class="slide" href="tipografia.html">Tipografía</a>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Sara Gómez Luque</p>
+    </footer>
+</body>
+
+</html>
